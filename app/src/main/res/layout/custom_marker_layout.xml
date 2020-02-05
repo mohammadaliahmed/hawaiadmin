@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/custom_marker_view"
+    android:layout_width="70dp"
+    android:layout_height="70dp"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:id="@+id/pinView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+
+        android:background="@drawable/big_logo">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_dp"
+            android:visibility="gone"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="6dp"
+            android:src="@drawable/add_picture" />
+    </RelativeLayout>
+</RelativeLayout>
