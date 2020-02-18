@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.appsinventiv.hawaiadmin">
+    package="com.hawai.hawaiadmin">
 
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
@@ -14,7 +14,7 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
-        android:name=".Utils.ApplicationClass"
+        android:name="com.hawai.hawaiadmin.Utils.ApplicationClass"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -36,14 +36,14 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".TrackingManagement.MapsActivity"
+            android:name="com.hawai.hawaiadmin.TrackingManagement.MapsActivity"
             android:label="@string/title_activity_maps"></activity>
         <activity
-            android:name=".Activites.MainActivity"
+            android:name="com.hawai.hawaiadmin.Activites.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
-            android:name=".Activites.Splash"
+            android:name="com.hawai.hawaiadmin.Activites.Splash"
             android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -51,15 +51,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activites.UserManagement.Login" />
-        <activity android:name=".Activites.UserManagement.Register" />
-        <activity android:name=".Activites.RidersManagement.ListOfRiders" />
-        <activity android:name=".Activites.RidersManagement.AddRider" />
-        <activity android:name=".Activites.UserManagement.Profile" />
-        <activity android:name=".TrackingManagement.TrackAllRiders" />
-        <activity android:name=".Activites.GPSTrackerActivity" />
+        <activity android:name="com.hawai.hawaiadmin.Activites.UserManagement.Login" />
+        <activity android:name="com.hawai.hawaiadmin.Activites.UserManagement.Register" />
+        <activity android:name="com.hawai.hawaiadmin.Activites.RidersManagement.ListOfRiders" />
+        <activity android:name="com.hawai.hawaiadmin.Activites.RidersManagement.AddRider" />
+        <activity android:name="com.hawai.hawaiadmin.Activites.UserManagement.Profile" />
+        <activity android:name="com.hawai.hawaiadmin.TrackingManagement.TrackAllRiders" />
+        <activity android:name="com.hawai.hawaiadmin.Activites.GPSTrackerActivity" />
 
-        <service android:name=".Utils.MyFirebaseMessagingService">
+        <service android:name="com.hawai.hawaiadmin.Utils.MyFirebaseMessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
